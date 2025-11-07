@@ -29,7 +29,7 @@ public class GameController {
     // Parámetros de los círculos
     private final double MIN_RADIUS = 10;
     private final double MAX_RADIUS = 30;
-    private final double FALL_SPEED = 1;
+    
     private final double LOST_LINE_Y = 550; // Línea cerca del pie de la ventana (600px)
 
     @FXML
@@ -109,7 +109,7 @@ public class GameController {
             javafx.scene.Node node = iterator.next();
             if (node instanceof Circle circle) {
                 // Mover el círculo
-                circle.setLayoutY(circle.getLayoutY() + FALL_SPEED);
+                circle.setLayoutY(circle.getLayoutY() + model.getSpeed());
 
                 // Comprobar si ha rebasado la línea de pérdida de vida
                 if (circle.getLayoutY() > LOST_LINE_Y) {

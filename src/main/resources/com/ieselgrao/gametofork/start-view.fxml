@@ -13,6 +13,11 @@
     <Label text="CÍRCULOS EN CAÍDA" style="-fx-font-size: 30px; -fx-font-weight: bold; -fx-text-fill: blue;" />
     <Label text="¡Haz click en los círculos antes de que crucen la línea roja!" style="-fx-font-size: 16px;" />
     <Label text="Pierdes una vida por cada círculo que se escapa. Tienes 3 vidas." style="-fx-font-size: 14px;" />
+    <Label text="Elige aqui la velocidad:" style="-fx-font-size: 16px; -fx-font-weight: bold; -fx-text-fill: blue;" />
+    <Label fx:id="textoVelocidad" text="1" style="-fx-font-size: 16px; -fx-font-weight: bold; -fx-text-fill: blue;" />
 
+    <Button text="+" onAction="#handleAddSpeed" style="-fx-font-size: 20px;" />
+    <Button text="-" onAction="#handleDecreaseSpeed" style="-fx-font-size: 20px;" />
     <Button text="EMPEZAR JUEGO" onAction="#handleStartGame" style="-fx-font-size: 20px;" />
+
 </VBox>
